@@ -51,12 +51,17 @@ G = "goto_file_end"
 "C-p" = ["file_picker"]
 "C-b" = ["buffer_picker"]
 t = { c = "toggle_comments", C = "toggle_block_comments" }
-y = { y = ["extend_to_line_bounds", "yank"] }
+y = { y = ["extend_to_line_bounds", "yank_to_clipboard"] }
+p = "paste_clipboard_after"
+P = "paste_clipboard_before"
 d = { d = ["extend_to_line_bounds", "delete_selection"] }
 V = ["extend_to_line_bounds", "select_mode"]
 x = "delete_selection"
 "S-up" = "page_cursor_half_up"
 "S-down" = "page_cursor_half_down"
+"S-right" = "move_next_long_word_start"
+"S-left" = "page_cursor_half_down"
+"C-r" = "redo"
 
 [keys.select]
 "$" = "goto_line_end"
